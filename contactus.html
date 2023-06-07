@@ -2,6 +2,28 @@
 <html>
     <head>
         <title> form</title>
+        <style>
+            h2{
+                color: blueviolet; 
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: xx-large;
+            }
+            label{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: aqua;
+            }
+            input{
+                width: 400px;
+                height: 25px;
+                border-radius: 10px;
+                border: 1px, red;
+                color: blueviolet;
+            }
+            input[type="text"]{
+                text-transform: capitalize;
+            }
+    
+        </style>
     </head>
     <body>
         <h2> Contact Us</h2>
@@ -16,16 +38,16 @@
                         <td><label>last name</label></td>
                         <td> <input type="text"></td>
                     </tr>
-                    <tr>
+                    <tr id="pr">
                         <td> <label> age </label></td>
                         <td><input type="number"></td>
                     </tr>
-                    <tr>
+                    <tr class="p">
                         <td> <label> Date of birth</label></td>
                         <td> <input type="date" required></td>
 
                     </tr>
-                    <tr>
+                    <tr class="p">
                         <td><label>exam completed week</label></td>
                         <td> <input type="week"></td>
                     </tr>
@@ -41,7 +63,7 @@
                      </tr>
 
                      <tr>
-                        <td> <label> select your hobbies</label></td>
+                        <td> <label> select your <span id="pk">hobbies</span></label></td>
                         <td> <input type="checkbox" checked> <label>Reading</label>
                             <input type="checkbox"> <label>Programming</label>
                             <input type="checkbox"> <label>dancing</label></td>
